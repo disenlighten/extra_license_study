@@ -9,3 +9,66 @@ I'm taking my first steps to formalize study materils for the Extra Class licens
 My plan is to go in depth in this document into topics that I'm struggling with and questions that I got wrong in practice tests. 
 
 Talking to Scott yesterday, he was telling me that his method was 15 minutes in the morning, 15 minutes at night of studying.
+
+** E2A
+Note from GW book: 100% on 2/28!
+
+** E2E
+*** Highlighted in the back of the GW book
+2E08
+2E09
+2E10
+2E12
+
+** Reviewing Questions from Screenshots
+*** 3A03 - 70
+A. When the moon is at perigree
+When the moon is at perigree and must appearing above the horizon, that is the PERfect time.
+*** 3A05 - 56
+C. Warm and Cold Fronts
+They form large-surface reflectors for VHF and microwave signals
+
+*** 3A06 - 46
+B. Switch to a lower frequency HF Band
+When the upper HF bands close in the evening, switch to the next lower band. 
+
+*** 3A11 - 57
+B. 100 to 300 miles
+Because the troposphere is lower than the ionosphere, skip distances are less.
+
+*** 3A13 - 55
+A. CW
+It's already hard, so this mode provides the best opportunity. Receiver may not even hear a tone, only short and long rushes of superimposed noise.
+
+*** 3A14 - 44
+3B02 - 48
+2E04 - 86
+2E10 - 88
+2E13 - 84
+3B04 - 43
+3B07
+3B10
+3B12
+3C03
+3C04
+3C05
+3C07
+3C09
+3C10
+3C11
+3C12
+3C14
+4A02
+4A04
+4A05
+4A06
+4A07
+4A09
+4B02
+4B03
+4B04
+4B05
+4B07
+4B08
+4B09
+4B10
