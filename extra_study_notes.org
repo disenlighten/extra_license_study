@@ -40,35 +40,59 @@ Because the troposphere is lower than the ionosphere, skip distances are less.
 A. CW
 It's already hard, so this mode provides the best opportunity. Receiver may not even hear a tone, only short and long rushes of superimposed noise.
 
-*** 3A14 - 44
-3B02 - 48
-2E04 - 86
-2E10 - 88
-2E13 - 84
-3B04 - 43
-3B07
-3B10
-3B12
-3C03
-3C04
-3C05
-3C07
-3C09
-3C10
-3C11
-3C12
-3C14
-4A02
-4A04
-4A05
-4A06
-4A07
-4A09
-4B02
-4B03
-4B04
-4B05
-4B07
-4B08
-4B09
-4B10
+* <2023-06-10 Sat>
+** More questions from screenshots
+*** 3A14 - 44 -> :research_in_manual:
+B. Waves with a rotating electric field
+Used for satellite contacts because circular polarizated antennas have a rotating electric field. 
+
+*** 3B02 - 48
+C. About 5000 miles for transequatorial propagation.
+Stations mus be equidistant from the geomagnetic equator. Reflections occur in and off the F2 layers during times of high sunspot activity.
+*** 2E04 - 86
+A. Selective fading has occurred.
+Propogation is causing the digital signal to fade in out. 
+
+*** 2E10 - 88
+C. PSK31
+Uses sinusoidal data pulses and efficient varicode characters for low bandwidth
+
+*** 2E13 - 84
+D. 300 baud packet
+On the worldwide bands, faster than other modes.
+
+*** 3B04 - 43 ->                                         :research_in_manual:
+B. Independent waves, generated in the ionosophere that are elliptically polarized
+2 waves, clockwise and counterclockwise with different paths
+
+*** 3B07 - 43 ->                                         :research_in_manual:
+C. They become elliptically polarized
+
+
+*** 3B10 - 47
+
+
+*** 3B12 - 47
+*** 3C03 - 49
+*** 3C04 - 49
+*** 3C05 - 49
+*** 3C07 - 50
+*** 3C09 - 51
+*** 3C10 - 52
+*** 3C11 - 45
+*** 3C12 - 58
+*** 3C14 - 55
+*** 4A02 - 205
+*** 4A04 - 208
+*** 4A05 - 194
+*** 4A06 - 208
+*** 4A07 - 243
+*** 4A09 - 208
+*** 4B02 - 206
+*** 4B03 - 210
+*** 4B04 - 210
+*** 4B05 - 210
+*** 4B07 - 210
+*** 4B08 - 209
+*** 4B09 - 209
+*** 4B10 - 206
