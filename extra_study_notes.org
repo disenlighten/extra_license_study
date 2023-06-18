@@ -42,7 +42,7 @@ It's already hard, so this mode provides the best opportunity. Receiver may not 
 
 * <2023-06-10 Sat>
 ** More questions from screenshots
-*** 3A14 - 44 -> :research_in_manual:
+*** 3A14 - 44 ->                                         :research_in_manual:
 B. Waves with a rotating electric field
 Used for satellite contacts because circular polarizated antennas have a rotating electric field. 
 
@@ -70,29 +70,287 @@ C. They become elliptically polarized
 
 
 *** 3B10 - 47
+Why is chordal hop propagation desirable?
+
+
+A. The signal experiences less loss compared to multi-hop using Earth as a reflector
 
 
 *** 3B12 - 47
+E3B12
+What is the primary characteristic of chordal hop propagation?
+
+
+B. Successive ionospheric refractions without an intermediate reflection from the ground
+
 *** 3C03 - 49
+E3C03
+Which of the following signal paths is most likely to experience high levels of absorption when the A index or K index is elevated?
+
+
+B. Polar
 *** 3C04 - 49
+E3C04
+What does the value of Bz (B sub Z) represent?
+
+
+C. Direction and strength of the interplanetary magnetic field
+
+
 *** 3C05 - 49
+
+E3C05
+What orientation of Bz (B sub z) increases the likelihood that incoming particles from the sun will cause disturbed conditions?
+
+
+A. Southward
+
 *** 3C07 - 50
+
+E3C07
+Which of the following descriptors indicates the greatest solar flare intensity?
+
+
+D. Class X
+
 *** 3C09 - 51
+E3C09
+How does the intensity of an X3 flare compare to that of an X2 flare?
+
+
+B. 50 percent greater
+
 *** 3C10 - 52
+E3C10
+What does the 304A solar parameter measure?
+
+
+B. UV emissions at 304 angstroms, correlated to the solar flux index
+
 *** 3C11 - 45
+E3C11
+What does VOACAP software model?
+
+p
+C. HF propagation
 *** 3C12 - 58
+E3C12
+How does the maximum range of ground-wave propagation change when the signal frequency is increased?
+
+
+C. It decreases
 *** 3C14 - 55
+E3C14
+Why does the radio-path horizon distance exceed the geometric horizon?
+
+
+D. Downward bending due to density variations in the atmosphere
 *** 4A02 - 205
+E4A02
+Which of the following parameters does a spectrum analyzer display on the vertical and horizontal axes?
+
+
+B. RF amplitude and frequency
 *** 4A04 - 208
+E4A04
+How is the compensation of an oscilloscope probe typically adjusted?
+
+
+A. A square wave is displayed and the probe is adjusted until the horizontal portions of the displayed wave are as nearly flat as possible
+
+
 *** 4A05 - 194
+E4A05
+What is the purpose of the prescaler function on a frequency counter?
+
+
+D. It divides a higher frequency signal so a low-frequency counter can display the input frequency
+
+
 *** 4A06 - 208
+E4A06
+What is the effect of aliasing on a digital oscilloscope caused by setting the time base too slow?
+
+
+A. A false, jittery low-frequency version of the signal is displayed
+
+
 *** 4A07 - 243
+E4A07
+Which of the following is an advantage of using an antenna analyzer compared to an SWR bridge to measure antenna SWR?
+
+
+B. Antenna analyzers do not need an external RF source
+
 *** 4A09 - 208
+
+E4A09
+Which of the following is good practice when using an oscilloscope probe?
+
+
+A. Keep the signal ground connection of the probe as short as possible
+
+
 *** 4B02 - 206
+E4B02
+What is the significance of voltmeter sensitivity expressed in ohms per volt?
+
+
+A. The full scale reading of the voltmeter multiplied by its ohms per volt rating will indicate the input impedance of the voltmeter
+
 *** 4B03 - 210
+E4B03
+Which S parameter is equivalent to forward gain?
+
+
+C. S21
 *** 4B04 - 210
+E4B04
+Which S parameter represents input port return loss or reflection coefficient (equivalent to VSWR)?
+
+
+A. S11
 *** 4B05 - 210
+E4B05
+What three test loads are used to calibrate an RF vector network analyzer?
+
+
+B. Short circuit, open circuit, and 50 ohms
+
 *** 4B07 - 210
+E4B07
+What do the subscripts of S parameters represent?
+
+
+A. The port or ports at which measurements are made
+
 *** 4B08 - 209
+E4B08
+Which of the following can be used to measure the Q of a series-tuned circuit?
+
+
+C. The bandwidth of the circuit's frequency response
+
 *** 4B09 - 209
+E4B09
+What is indicated if the current reading on an RF ammeter placed in series with the antenna feed line of a transmitter increases as the transmitter is tuned to resonance?
+
+
+D. There is more power going into the antenna
+
+
 *** 4B10 - 206
+E4B10
+Which of the following methods measures intermodulation distortion in an SSB transmitter?
+
+
+B. Modulate the transmitter using two AF signals having non-harmonically related frequencies and observe the RF output with a spectrum analyzer
+
+
+* <2023-06-13 Tue>
+Trouble._questions=['E3B10','E3B12','E3C03','E3C04','E3C05','E3C07','E3C09','E3C10','E3C11','E3C12','E3C14','E4A02','E4A04','E4A05','E4A06','E4A07','E4A09','E4B02','E4B03','E4B04','E4B05','E4B07','E4B08','E4B09','E4B10']
+
+sed -e "s/^/'E/" -e "s/$/'\,/"
+
+tr -d '\n'
+
+
+* <2023-06-15 Thu>
+
+** Copying questions from screenshots
+trouble_questions=['E4D01','E4D02','E4D03','E4D04','E4D05','E4D07','E4D08','E4D09','E4D10','E4D11','E4D12','E4C01']
+
+
+* <2023-06-18 Sun>
+** questions from screenshots translated
+#+begin_src python
+import json
+with open("./extra_questions.json") as ext_json_data: 
+     bigdct = json.load(ext_json_data)
+     ext_json_data.close()
+
+def convert_to_key(correct_ans):
+    converted_ans = 'ans_{}'.format(correct_ans)
+    return converted_ans
+
+for chosen_question in trouble_questions:
+         print('** {}'.format(chosen_question))
+         print(bigdct[chosen_question]["question"][0])
+         print("\n")
+         print(
+             bigdct[chosen_question][convert_to_key(bigdct[chosen_question]["correct_ans"])]
+         )
+         print("\n")
+ #+end_src
+
+** E4D01
+What is meant by the blocking dynamic range of a receiver?
+
+
+A. The difference in dB between the noise floor and the level of an incoming signal that will cause 1 dB of gain compression
+
+** E4D02
+Which of the following describes problems caused by poor dynamic range in a receiver?
+
+
+A. Spurious signals caused by cross-modulation and desensitization from strong adjacent signals
+
+** E4D03
+How can intermodulation interference between two repeaters occur?
+
+
+B. When the repeaters are in close proximity and the signals mix in the final amplifier of one or both transmitters
+
+** E4D04
+Which of the following may reduce or eliminate intermodulation interference in a repeater caused by another transmitter operating in close proximity?
+
+
+B. A properly terminated circulator at the output of the repeater’s transmitter
+
+** E4D05
+What transmitter frequencies would cause an intermodulation-product signal in a receiver tuned to 146.70 MHz when a nearby station transmits on 146.52 MHz?
+
+
+A. 146.34 MHz and 146.61 MHz
+
+** E4D07
+Which of the following reduces the likelihood of receiver desensitization?
+
+
+A. Decrease the RF bandwidth of the receiver
+
+** E4D08
+What causes intermodulation in an electronic circuit?
+
+
+C. Nonlinear circuits or devices
+
+** E4D09
+What is the purpose of the preselector in a communications receiver?
+
+
+C. To increase rejection of signals outside the desired band
+
+** E4D10
+What does a third-order intercept level of 40 dBm mean with respect to receiver performance?
+
+
+C. A pair of 40 dBm input signals will theoretically generate a third-order intermodulation product that has the same output amplitude as either of the input signals
+
+** E4D11
+Why are odd-order intermodulation products, created within a receiver, of particular interest compared to other products?
+
+
+A. Odd-order products of two signals in the band of interest are also likely to be within the band
+
+** E4D12
+What is the term for the reduction in receiver sensitivity caused by a strong signal near the received frequency?
+
+
+A. Desensitization
+
+** E4C01
+What is an effect of excessive phase noise in a receiver’s local oscillator?
+
+
+D. It can combine with strong signals on nearby frequencies to generate interference
